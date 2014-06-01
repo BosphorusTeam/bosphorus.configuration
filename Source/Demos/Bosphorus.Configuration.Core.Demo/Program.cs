@@ -14,7 +14,7 @@ namespace Bosphorus.Configuration.Core.Demo
 
         static void Main(string[] args)
         {
-            WindowsRunner.Run<Program>(args);
+            ConsoleRunner.Run<Program>(args);
         }
 
         public void Run(string[] args)
