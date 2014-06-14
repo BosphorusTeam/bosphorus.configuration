@@ -21,6 +21,9 @@ namespace Bosphorus.Configuration.Core.Demo
         {
             string value1 = programConfiguration.Key1;
             Console.WriteLine(value1);
+
+            string value2 = programConfiguration.Key2;
+            Console.WriteLine(value2);
         }
     }
 }

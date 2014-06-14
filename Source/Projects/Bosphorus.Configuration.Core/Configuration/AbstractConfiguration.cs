@@ -1,4 +1,6 @@
-﻿namespace Bosphorus.Configuration.Core
+﻿using Bosphorus.Configuration.Core.Parameter.Provider;
+
+namespace Bosphorus.Configuration.Core.Configuration
 {
     public abstract class AbstractConfiguration : IConfiguration
     {

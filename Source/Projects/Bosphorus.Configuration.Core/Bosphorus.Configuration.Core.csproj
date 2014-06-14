@@ -30,9 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bosphorus.Container.Castle, Version=1.1.0.4, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Common.Clr">
+      <HintPath>..\..\packages\Bosphorus.Common.Clr.1.0.0.3\lib\net45\Bosphorus.Common.Clr.dll</HintPath>
+    </Reference>
+    <Reference Include="Bosphorus.Container.Castle, Version=1.1.0.8, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Container.Castle.1.1.0.4\lib\net45\Bosphorus.Container.Castle.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Container.Castle.1.1.0.8\lib\net45\Bosphorus.Container.Castle.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core">
       <HintPath>..\..\packages\Castle.Core.3.2.2\lib\net45\Castle.Core.dll</HintPath>
@@ -49,15 +52,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractConfiguration.cs" />
-    <Compile Include="AbstractParameterProvider.cs" />
-    <Compile Include="IConfiguration.cs" />
+    <Compile Include="Configuration\AbstractConfiguration.cs" />
+    <Compile Include="Parameter.Provider.Decoration\ParameterNotExistsException.cs" />
+    <Compile Include="Parameter.Provider.Decoration\ParameterProviderContainsKeyFailedException.cs" />
+    <Compile Include="Parameter.Provider.Decoration\ParameterProviderGetValueFailedException.cs" />
+    <Compile Include="Parameter.Provider.Decoration\SafeGetDecorator.cs" />
+    <Compile Include="Parameter.Provider\AbstractParameterProvider.cs" />
+    <Compile Include="Parameter.Provider.Decoration\ExceptionDecorator.cs" />
+    <Compile Include="Configuration\IConfiguration.cs" />
     <Compile Include="Installer.cs" />
-    <Compile Include="IParameterProvider.cs" />
+    <Compile Include="Parameter.Provider\IParameterProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
