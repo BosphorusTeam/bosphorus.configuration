@@ -16,7 +16,9 @@ namespace Bosphorus.Configuration.Core
                 allLoadedTypes
                     .BasedOn<IParameterProvider>()
                     .WithService
-                    .AllInterfaces(),
+                    .FromInterface()
+                    .WithService
+                    .Self(),
 
                 Component
                     .For<IParameterProvider>()

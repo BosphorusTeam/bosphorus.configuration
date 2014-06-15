@@ -40,7 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppConfigParameterProvider.cs" />
+    <Compile Include="Parameter.Provider\AppConfigParameterProvider.cs" />
+    <Compile Include="Parameter.Provider\InMemoryParameterProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

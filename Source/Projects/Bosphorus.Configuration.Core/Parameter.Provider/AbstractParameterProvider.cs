@@ -4,6 +4,11 @@
     {
         private readonly string name;
 
+        protected AbstractParameterProvider()
+        {
+            this.name = this.GetType().Name;
+        }
+
         protected AbstractParameterProvider(string name)
         {
             this.name = name;
@@ -28,6 +33,6 @@
             return parameterValue;
         }
 
-        public abstract string GetValueInternal(string parameterName);
+        protected abstract string GetValueInternal(string parameterName);
    }
 }

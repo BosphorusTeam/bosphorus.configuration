@@ -2,7 +2,7 @@
 using System.Linq;
 using Bosphorus.Configuration.Core.Parameter.Provider;
 
-namespace Bosphorus.Configuration.Default
+namespace Bosphorus.Configuration.Default.Parameter.Provider
 {
     public class AppConfigParameterProvider : AbstractParameterProvider
     {
@@ -17,10 +17,10 @@ namespace Bosphorus.Configuration.Default
             return parameterExists;
         }
 
-        public override string GetValueInternal(string parameterName)
+        protected override string GetValueInternal(string parameterName)
         {
             string parameterValue = ConfigurationManager.AppSettings.Get(parameterName);
             return parameterValue;
         }
-    }
+   }
 }
