@@ -8,7 +8,7 @@ namespace Bosphorus.Configuration.Default.Parameter.Provider
         {
             Type enumType = typeof (TEnum);
             string parameterValueString = Enum.GetName(enumType, parameterValue);
-            extended.SetValue("Perspective", parameterValueString);
+            extended.SetValue(parameterName, parameterValueString);
         }
     }
 }
