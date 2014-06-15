@@ -63,6 +63,7 @@
     <Compile Include="Configuration\IConfiguration.cs" />
     <Compile Include="Installer.cs" />
     <Compile Include="Parameter.Provider\IParameterProvider.cs" />
+    <Compile Include="Parameter.Provider\ParameterProviderExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
