@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Parameter.Provider\AppConfigParameterProvider.cs" />
     <Compile Include="Parameter.Provider\InMemoryParameterProvider.cs" />
+    <Compile Include="Parameter.Provider\InMemoryParameterProviderExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

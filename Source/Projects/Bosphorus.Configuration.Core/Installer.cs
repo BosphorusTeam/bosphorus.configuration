@@ -34,8 +34,6 @@ namespace Bosphorus.Configuration.Core
                     .BasedOn<IConfiguration>()
                     .WithService
                     .Self()
-                    .WithService
-                    .AllInterfaces()
             );
         }
     }
