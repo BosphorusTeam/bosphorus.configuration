@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Bosphorus.Configuration.Default</RootNamespace>
-    <AssemblyName>♦</AssemblyName>
+    <AssemblyName>Bosphorus.Configuration.Default</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
