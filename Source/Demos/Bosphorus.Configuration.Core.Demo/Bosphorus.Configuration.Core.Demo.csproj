@@ -32,8 +32,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bosphorus.Container.Castle, Version=1.1.0.10, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Bosphorus.BootStapper">
+      <HintPath>..\..\packages\Bosphorus.BootStapper.1.1.0.4\lib\net45\Bosphorus.BootStapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Bosphorus.Common.Clr">
+      <HintPath>..\..\packages\Bosphorus.Common.Clr.1.0.0.5\lib\net45\Bosphorus.Common.Clr.dll</HintPath>
+    </Reference>
+    <Reference Include="Bosphorus.Container.Castle">
       <HintPath>..\..\packages\Bosphorus.Container.Castle.1.1.0.10\lib\net45\Bosphorus.Container.Castle.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core">
