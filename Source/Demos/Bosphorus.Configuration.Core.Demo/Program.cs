@@ -1,4 +1,5 @@
 ﻿using System;
+using Bosphorus.BootStapper.Program;
 using Bosphorus.BootStapper.Runner;
 
 namespace Bosphorus.Configuration.Core.Demo
