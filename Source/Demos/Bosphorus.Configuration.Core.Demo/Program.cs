@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Bosphorus.BootStapper.Common;
 using Bosphorus.BootStapper.Program;
 using Bosphorus.BootStapper.Runner;
 
@@ -15,16 +15,16 @@ namespace Bosphorus.Configuration.Core.Demo
 
         static void Main(string[] args)
         {
-            ConsoleRunner.Run<Program>(args);
+            ConsoleRunner.Run<Program>(Environment.Local, Perspective.Debug, args);
         }
 
         public void Run(string[] args)
         {
             string value1 = programConfiguration.Key1;
-            Console.WriteLine(value1);
+            System.Console.WriteLine(value1);
 
             string value2 = programConfiguration.Key2;
-            Console.WriteLine(value2);
+            System.Console.WriteLine(value2);
         }
     }
 }
