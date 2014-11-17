@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using System;
+using System.Configuration;
 using System.Linq;
 using Bosphorus.Configuration.Core.Parameter.Provider;
 
@@ -11,16 +12,17 @@ namespace Bosphorus.Configuration.Default.Parameter.Provider
         {
         }
 
-        protected override bool ContaintsParameterInternal(string parameterName)
+        protected override bool ContainsInternal(string parameterName)
         {
             bool parameterExists = ConfigurationManager.AppSettings.AllKeys.Contains(parameterName);
             return parameterExists;
         }
 
-        protected override string GetValueInternal(string parameterName)
+        protected override TValue GetValueInternal<TValue>(string parameterName)
         {
-            string parameterValue = ConfigurationManager.AppSettings.Get(parameterName);
-            return parameterValue;
+            string appSettingsValue = ConfigurationManager.AppSettings.Get(parameterName);
+            object parameterValue = Convert.ChangeType(appSettingsValue, typeof(TValue));
+            return (TValue) parameterValue;
         }
    }
 }

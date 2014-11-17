@@ -4,8 +4,8 @@
     {
         string Name { get; }
 
-        bool ContaintsParameter(string parameterName);
+        bool Contains(string key);
 
-        string GetValue(string parameterName);
+        TValue GetValue<TValue>(string key);
     }
 }

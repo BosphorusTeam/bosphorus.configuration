@@ -19,20 +19,20 @@
             get { return name; }
         }
 
-        public bool ContaintsParameter(string parameterName)
+        public bool Contains(string key)
         {
-            bool result = ContaintsParameterInternal(parameterName);
+            bool result = ContainsInternal(key);
             return result;
         }
 
-        protected abstract bool ContaintsParameterInternal(string parameterName);
+        protected abstract bool ContainsInternal(string parameterName);
 
-        public string GetValue(string parameterName)
+        public TValue GetValue<TValue>(string key)
         {
-            string parameterValue = GetValueInternal(parameterName);
+            TValue parameterValue = GetValueInternal<TValue>(key);
             return parameterValue;
         }
 
-        protected abstract string GetValueInternal(string parameterName);
+        protected abstract TValue GetValueInternal<TValue>(string parameterName);
    }
 }

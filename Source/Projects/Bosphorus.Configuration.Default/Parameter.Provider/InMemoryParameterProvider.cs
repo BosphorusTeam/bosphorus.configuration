@@ -5,26 +5,26 @@ namespace Bosphorus.Configuration.Default.Parameter.Provider
 {
     public class InMemoryParameterProvider: AbstractParameterProvider
     {
-        private readonly IDictionary<string, string> backingStore;
+        private readonly IDictionary<string, object> backingStore;
 
         public InMemoryParameterProvider()
         {
-            backingStore = new Dictionary<string, string>();
+            backingStore = new Dictionary<string, object>();
         }
 
-        protected override bool ContaintsParameterInternal(string parameterName)
+        protected override bool ContainsInternal(string parameterName)
         {
             bool result = backingStore.ContainsKey(parameterName);
             return result;
         }
 
-        protected override string GetValueInternal(string parameterName)
+        protected override TValue GetValueInternal<TValue>(string parameterName)
         {
-            string result = backingStore[parameterName];
-            return result;
+            object result = backingStore[parameterName];
+            return (TValue) result;
         }
 
-        public void SetValue(string parameterName, string parameterValue)
+        public void SetValue(string parameterName, object parameterValue)
         {
             backingStore[parameterName] = parameterValue;
         }

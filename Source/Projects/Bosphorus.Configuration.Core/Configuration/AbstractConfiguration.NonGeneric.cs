@@ -5,7 +5,7 @@ namespace Bosphorus.Configuration.Core.Configuration
     public abstract class AbstractConfiguration : IConfiguration
     {
         private readonly string name;
-        protected readonly IParameterProvider parameterProvider;
+        private readonly IParameterProvider parameterProvider;
 
         protected AbstractConfiguration(string name, IParameterProvider parameterProvider)
         {
@@ -17,5 +17,14 @@ namespace Bosphorus.Configuration.Core.Configuration
         {
             get { return name; }
         }
+
+        protected TValue GetValue<TValue>(string parameterName)
+        {
+            string parameterFullName = string.Format("{0}.{1}", name, parameterName);
+            TValue result = parameterProvider.GetValue<TValue>(parameterFullName);
+
+            return result;
+        }
     }
 }
+

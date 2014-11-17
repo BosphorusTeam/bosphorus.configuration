@@ -14,21 +14,21 @@
             get { return decorated.Name; }
         }
 
-        public bool ContaintsParameter(string parameterName)
+        public bool Contains(string key)
         {
-            bool result = decorated.ContaintsParameter(parameterName);
+            bool result = decorated.Contains(key);
             return result;
         }
 
-        public string GetValue(string parameterName)
+        public TValue GetValue<TValue>(string key)
         {
-            bool containtsParameter = ContaintsParameter(parameterName);
+            bool containtsParameter = Contains(key);
             if (!containtsParameter)
             {
-                throw new ParameterNotExistsException(decorated, parameterName);
+                throw new ParameterNotExistsException(decorated, key);
             }
 
-            string result = decorated.GetValue(parameterName);
+            TValue result = decorated.GetValue<TValue>(key);
             return result;
         }
     }

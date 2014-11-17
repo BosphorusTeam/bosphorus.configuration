@@ -16,30 +16,30 @@ namespace Bosphorus.Configuration.Core.Parameter.Provider.Decoration
             get { return decorated.Name; }
         }
 
-        public bool ContaintsParameter(string parameterName)
+        public bool Contains(string key)
         {
             try
             {
-                bool result = decorated.ContaintsParameter(parameterName);
+                bool result = decorated.Contains(key);
                 return result;
             }
             catch (Exception exception)
             {
-                throw new ParameterProviderContainsKeyFailedException(decorated, parameterName, exception);
+                throw new ParameterProviderContainsKeyFailedException(decorated, key, exception);
             }
             
         }
 
-        public string GetValue(string parameterName)
+        public TValue GetValue<TValue>(string key)
         {
             try
             {
-                string result = decorated.GetValue(parameterName);
+                TValue result = decorated.GetValue<TValue>(key);
                 return result;
             }
             catch (Exception exception)
             {
-                throw new ParameterProviderGetValueFailedException(decorated, parameterName, exception);
+                throw new ParameterProviderGetValueFailedException(decorated, key, exception);
             }
         }
     }
