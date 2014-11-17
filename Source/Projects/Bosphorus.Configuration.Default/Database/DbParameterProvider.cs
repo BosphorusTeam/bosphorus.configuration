@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Bosphorus.Configuration.Core.Parameter.Provider;
+using Bosphorus.Configuration.Core;
 using Bosphorus.Dao.Core.Dao;
 
-namespace Bosphorus.Configuration.Default.Parameter.Provider.Db
+namespace Bosphorus.Configuration.Default.Database
 {
     public class DbParameterProvider<TModel>: IParameterProvider
         where TModel: IParameterModel

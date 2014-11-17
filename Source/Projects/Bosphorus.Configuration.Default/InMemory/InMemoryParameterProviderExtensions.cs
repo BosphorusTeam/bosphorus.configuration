@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bosphorus.Configuration.Default.Parameter.Provider
+namespace Bosphorus.Configuration.Default.InMemory
 {
     public static class InMemoryParameterProviderExtensions
     {

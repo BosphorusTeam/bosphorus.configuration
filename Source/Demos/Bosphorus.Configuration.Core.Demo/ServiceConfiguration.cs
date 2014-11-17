@@ -1,7 +1,4 @@
-﻿using Bosphorus.Configuration.Core.Configuration;
-using Bosphorus.Configuration.Core.Parameter.Provider;
-
-namespace Bosphorus.Configuration.Core.Demo
+﻿namespace Bosphorus.Configuration.Core.Demo
 {
     public class ServiceConfiguration: AbstractConfiguration
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Bosphorus.Configuration.Core.Parameter.Provider;
+using Bosphorus.Configuration.Core;
 
-namespace Bosphorus.Configuration.Default.Parameter.Provider
+namespace Bosphorus.Configuration.Default.InMemory
 {
     public class InMemoryParameterProvider: AbstractParameterProvider
     {

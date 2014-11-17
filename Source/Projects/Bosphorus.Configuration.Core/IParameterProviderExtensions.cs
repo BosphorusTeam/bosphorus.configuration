@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Bosphorus.Configuration.Core.Parameter.Provider
+namespace Bosphorus.Configuration.Core
 {
-    public static class ParameterProviderExtensions
+    public static class IParameterProviderExtensions
     {
         public static TEnum GetValueAsEnum<TEnum>(this IParameterProvider extended, string parameterName)
         {

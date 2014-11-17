@@ -1,7 +1,4 @@
-﻿using System;
-using Bosphorus.Configuration.Core.Parameter.Provider;
-
-namespace Bosphorus.Configuration.Core.Configuration
+﻿namespace Bosphorus.Configuration.Core
 {
     public abstract class AbstractConfiguration<TOwner> : AbstractConfiguration
     {

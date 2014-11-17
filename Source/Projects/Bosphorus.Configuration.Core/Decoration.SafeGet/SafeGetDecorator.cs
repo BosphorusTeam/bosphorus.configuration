@@ -1,4 +1,4 @@
-﻿namespace Bosphorus.Configuration.Core.Parameter.Provider.Decoration
+﻿namespace Bosphorus.Configuration.Core.Decoration.SafeGet
 {
     class SafeGetDecorator: IParameterProvider
     {

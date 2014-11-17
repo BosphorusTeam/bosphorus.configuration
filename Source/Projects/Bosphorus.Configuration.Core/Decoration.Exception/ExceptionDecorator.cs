@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Bosphorus.Configuration.Core.Parameter.Provider.Decoration
+﻿namespace Bosphorus.Configuration.Core.Decoration.Exception
 {
     class ExceptionDecorator: IParameterProvider
     {
@@ -23,7 +21,7 @@ namespace Bosphorus.Configuration.Core.Parameter.Provider.Decoration
                 bool result = decorated.Contains(key);
                 return result;
             }
-            catch (Exception exception)
+            catch (System.Exception exception)
             {
                 throw new ParameterProviderContainsKeyFailedException(decorated, key, exception);
             }
@@ -37,7 +35,7 @@ namespace Bosphorus.Configuration.Core.Parameter.Provider.Decoration
                 TValue result = decorated.GetValue<TValue>(key);
                 return result;
             }
-            catch (Exception exception)
+            catch (System.Exception exception)
             {
                 throw new ParameterProviderGetValueFailedException(decorated, key, exception);
             }

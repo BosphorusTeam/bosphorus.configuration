@@ -1,4 +1,4 @@
-﻿namespace Bosphorus.Configuration.Core.Parameter.Provider
+﻿namespace Bosphorus.Configuration.Core
 {
     public interface IParameterProvider
     {

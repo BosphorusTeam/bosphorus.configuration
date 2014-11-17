@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Configuration;
 using System.Linq;
-using Bosphorus.Configuration.Core.Parameter.Provider;
+using Bosphorus.Configuration.Core;
 
-namespace Bosphorus.Configuration.Default.Parameter.Provider
+namespace Bosphorus.Configuration.Default.AppConfig
 {
     public class AppConfigParameterProvider : AbstractParameterProvider
     {

@@ -1,4 +1,4 @@
-﻿namespace Bosphorus.Configuration.Default.Parameter.Provider.Db
+﻿namespace Bosphorus.Configuration.Default.Database
 {
     public interface IParameterModel
     {

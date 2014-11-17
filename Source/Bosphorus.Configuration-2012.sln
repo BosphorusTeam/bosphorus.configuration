@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{159AB559-457E-4249-A7C8-4AD48D43C081}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bosphorus.Configuration.Core", "Projects\Bosphorus.Configuration.Core\Bosphorus.Configuration.Core.csproj", "{FC5A7B05-6722-4959-988F-6ECB569EB356}"

@@ -1,4 +1,4 @@
-﻿namespace Bosphorus.Configuration.Core.Configuration
+﻿namespace Bosphorus.Configuration.Core
 {
     public interface IConfiguration
     {
