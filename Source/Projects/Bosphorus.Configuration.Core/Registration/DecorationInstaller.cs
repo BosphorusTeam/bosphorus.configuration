@@ -1,7 +1,6 @@
 ﻿using Bosphorus.Configuration.Core.Decoration.Exception;
 using Bosphorus.Configuration.Core.Decoration.SafeGet;
 using Bosphorus.Container.Castle.Fluent;
-using Bosphorus.Container.Castle.Installerr;
 using Bosphorus.Container.Castle.Registration;
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
