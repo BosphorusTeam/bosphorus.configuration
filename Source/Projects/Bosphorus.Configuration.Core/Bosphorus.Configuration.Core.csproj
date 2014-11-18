@@ -53,7 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractConfiguration.cs" />
+    <Compile Include="AbstractConfiguration.Generic.cs" />
+    <Compile Include="AbstractConfiguration.NonGeneric.cs" />
     <Compile Include="Decoration.SafeGet\ParameterNotExistsException.cs" />
     <Compile Include="Decoration.Exception\ParameterProviderContainsKeyFailedException.cs" />
     <Compile Include="Decoration.Exception\ParameterProviderGetValueFailedException.cs" />
