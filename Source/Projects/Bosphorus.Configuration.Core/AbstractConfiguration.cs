@@ -1,13 +1,13 @@
 ﻿namespace Bosphorus.Configuration.Core
 {
-    public abstract class AbstractConfiguration : IConfiguration
+    public abstract class AbstractConfiguration<TOwner> : IConfiguration<TOwner>
     {
         private readonly string name;
         private readonly IParameterProvider parameterProvider;
 
-        protected AbstractConfiguration(string name, IParameterProvider parameterProvider)
+        protected AbstractConfiguration(IParameterProvider parameterProvider)
         {
-            this.name = name;
+            this.name = typeof(TOwner).FullName;
             this.parameterProvider = parameterProvider;
         }
 
