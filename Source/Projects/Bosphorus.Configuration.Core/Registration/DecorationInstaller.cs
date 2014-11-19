@@ -1,5 +1,5 @@
 ﻿using Bosphorus.Configuration.Core.Decoration.Exception;
-using Bosphorus.Configuration.Core.Decoration.SafeGet;
+using Bosphorus.Configuration.Core.Decoration.Safe;
 using Bosphorus.Container.Castle.Fluent;
 using Bosphorus.Container.Castle.Registration;
 using Castle.MicroKernel.Registration;

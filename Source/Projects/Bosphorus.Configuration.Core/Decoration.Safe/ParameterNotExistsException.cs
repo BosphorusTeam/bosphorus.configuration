@@ -1,6 +1,6 @@
 ﻿using Bosphorus.Common.Clr.Exception;
 
-namespace Bosphorus.Configuration.Core.Decoration.SafeGet
+namespace Bosphorus.Configuration.Core.Decoration.Safe
 {
     public class ParameterNotExistsException : ExceptionBase
     {

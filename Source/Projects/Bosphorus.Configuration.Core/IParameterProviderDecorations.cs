@@ -1,6 +1,6 @@
 ﻿using System;
 using Bosphorus.Configuration.Core.Decoration.Exception;
-using Bosphorus.Configuration.Core.Decoration.SafeGet;
+using Bosphorus.Configuration.Core.Decoration.Safe;
 
 namespace Bosphorus.Configuration.Core
 {
