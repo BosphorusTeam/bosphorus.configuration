@@ -5,12 +5,12 @@ using Bosphorus.Dao.Core.Dao;
 
 namespace Bosphorus.Configuration.Default.Database
 {
-    public class DbParameterProvider<TModel>: AbstractParameterProvider, IDbParameterProvider<TModel>
+    public class DatabaseParameterProvider<TModel>: AbstractParameterProvider, IDatabaseParameterProvider<TModel>
         where TModel: IParameterModel
     {
         private readonly IDao<TModel> parameterDao;
 
-        public DbParameterProvider(IDao<TModel> parameterDao)
+        public DatabaseParameterProvider(IDao<TModel> parameterDao)
         {
             this.parameterDao = parameterDao;
         }

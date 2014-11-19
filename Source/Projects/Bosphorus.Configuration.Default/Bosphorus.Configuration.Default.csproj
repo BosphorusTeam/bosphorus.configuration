@@ -61,8 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfig\IAppConfigParameterProvider.cs" />
-    <Compile Include="Database\DbParameterProvider.cs" />
-    <Compile Include="Database\IDbParameterProvider.cs" />
+    <Compile Include="Database\DatabaseParameterProvider.cs" />
+    <Compile Include="Database\IDatabaseParameterProvider.cs" />
     <Compile Include="Database\IParameterModel.cs" />
     <Compile Include="AppConfig\AppConfigParameterProvider.cs" />
     <Compile Include="InMemory\IInMemoryParameterProvider.cs" />

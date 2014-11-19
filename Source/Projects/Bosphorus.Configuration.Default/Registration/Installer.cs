@@ -23,8 +23,8 @@ namespace Bosphorus.Configuration.Default.Registration
                     .NamedUnique(),
 
                 Component
-                    .For(typeof(IDbParameterProvider<>))
-                    .ImplementedBy(typeof(DbParameterProvider<>))
+                    .For(typeof(IDatabaseParameterProvider<>))
+                    .ImplementedBy(typeof(DatabaseParameterProvider<>))
                     .IsFallback()
                     .NamedUnique(),
 

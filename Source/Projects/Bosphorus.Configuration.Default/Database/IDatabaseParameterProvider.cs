@@ -2,7 +2,7 @@
 
 namespace Bosphorus.Configuration.Default.Database
 {
-    public interface IDbParameterProvider<TModel>: IParameterProvider
+    public interface IDatabaseParameterProvider<TModel>: IParameterProvider
     {
     }
 }
