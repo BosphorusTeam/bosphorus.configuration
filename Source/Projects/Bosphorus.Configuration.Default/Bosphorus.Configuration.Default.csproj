@@ -34,9 +34,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Bosphorus.Common.Clr.1.0.0.15\lib\net45\Bosphorus.Common.Clr.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Container.Castle, Version=1.1.0.30, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Container.Castle, Version=1.1.0.31, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Container.Castle.1.1.0.30\lib\net45\Bosphorus.Container.Castle.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Container.Castle.1.1.0.31\lib\net45\Bosphorus.Container.Castle.dll</HintPath>
     </Reference>
     <Reference Include="Bosphorus.Dao.Core, Version=2.1.0.28, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -60,12 +60,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppConfig\IAppConfigParameterProvider.cs" />
     <Compile Include="Database\DbParameterProvider.cs" />
+    <Compile Include="Database\IDbParameterProvider.cs" />
     <Compile Include="Database\IParameterModel.cs" />
     <Compile Include="AppConfig\AppConfigParameterProvider.cs" />
+    <Compile Include="InMemory\IInMemoryParameterProvider.cs" />
     <Compile Include="InMemory\InMemoryParameterProvider.cs" />
-    <Compile Include="InMemory\InMemoryParameterProviderExtensions.cs" />
+    <Compile Include="InMemory\IInMemoryParameterProviderExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration\Installer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bosphorus.Configuration.Core\Bosphorus.Configuration.Core.csproj">

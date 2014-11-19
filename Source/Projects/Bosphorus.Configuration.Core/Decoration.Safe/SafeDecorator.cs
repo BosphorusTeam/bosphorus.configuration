@@ -1,10 +1,10 @@
 ﻿namespace Bosphorus.Configuration.Core.Decoration.SafeGet
 {
-    class SafeGetDecorator: IParameterProvider
+    class SafeDecorator: IParameterProvider
     {
         private readonly IParameterProvider decorated;
 
-        public SafeGetDecorator(IParameterProvider decorated)
+        public SafeDecorator(IParameterProvider decorated)
         {
             this.decorated = decorated;
         }

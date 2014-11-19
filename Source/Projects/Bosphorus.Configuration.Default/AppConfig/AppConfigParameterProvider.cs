@@ -5,7 +5,7 @@ using Bosphorus.Configuration.Core;
 
 namespace Bosphorus.Configuration.Default.AppConfig
 {
-    public class AppConfigParameterProvider : AbstractParameterProvider
+    public class AppConfigParameterProvider : AbstractParameterProvider, IAppConfigParameterProvider
     {
         public AppConfigParameterProvider() 
             : base("AppConfigParameterProvider")

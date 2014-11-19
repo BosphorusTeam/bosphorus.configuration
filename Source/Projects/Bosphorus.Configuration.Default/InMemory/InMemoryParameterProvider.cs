@@ -3,7 +3,7 @@ using Bosphorus.Configuration.Core;
 
 namespace Bosphorus.Configuration.Default.InMemory
 {
-    public class InMemoryParameterProvider: AbstractParameterProvider
+    public class InMemoryParameterProvider: AbstractParameterProvider, IInMemoryParameterProvider
     {
         private readonly IDictionary<string, object> backingStore;
 

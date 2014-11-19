@@ -34,9 +34,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Bosphorus.Common.Clr.1.0.0.15\lib\net45\Bosphorus.Common.Clr.dll</HintPath>
     </Reference>
-    <Reference Include="Bosphorus.Container.Castle, Version=1.1.0.30, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bosphorus.Container.Castle, Version=1.1.0.31, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Bosphorus.Container.Castle.1.1.0.30\lib\net45\Bosphorus.Container.Castle.dll</HintPath>
+      <HintPath>..\..\packages\Bosphorus.Container.Castle.1.1.0.31\lib\net45\Bosphorus.Container.Castle.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core">
       <HintPath>..\..\packages\Castle.Core.3.2.2\lib\net45\Castle.Core.dll</HintPath>
@@ -55,13 +55,14 @@
   <ItemGroup>
     <Compile Include="AbstractConfiguration.Generic.cs" />
     <Compile Include="AbstractConfiguration.NonGeneric.cs" />
-    <Compile Include="Decoration.SafeGet\ParameterNotExistsException.cs" />
+    <Compile Include="Decoration.Safe\ParameterNotExistsException.cs" />
     <Compile Include="Decoration.Exception\ParameterProviderContainsKeyFailedException.cs" />
     <Compile Include="Decoration.Exception\ParameterProviderGetValueFailedException.cs" />
-    <Compile Include="Decoration.SafeGet\SafeGetDecorator.cs" />
+    <Compile Include="Decoration.Safe\SafeDecorator.cs" />
     <Compile Include="AbstractParameterProvider.cs" />
     <Compile Include="Decoration.Exception\ExceptionDecorator.cs" />
     <Compile Include="IConfiguration.cs" />
+    <Compile Include="IParameterProviderDecorations.cs" />
     <Compile Include="Registration\DecorationInstaller.cs" />
     <Compile Include="IParameterProvider.cs" />
     <Compile Include="IParameterProviderExtensions.cs" />

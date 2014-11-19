@@ -1,8 +1,10 @@
-﻿namespace Bosphorus.Configuration.Core.Demo
+﻿using Bosphorus.Configuration.Default.InMemory;
+
+namespace Bosphorus.Configuration.Core.Demo
 {
     public class ProgramConfiguration: AbstractConfiguration<Program>
     {
-        public ProgramConfiguration(IParameterProvider parameterProvider) 
+        public ProgramConfiguration(IInMemoryParameterProvider parameterProvider) 
             : base(parameterProvider)
         {
         }

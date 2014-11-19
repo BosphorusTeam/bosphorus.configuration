@@ -15,7 +15,7 @@ namespace Bosphorus.Configuration.Core.Registration
             container.Register(
                 Decorator
                     .For<IParameterProvider>()
-                    .Is<SafeGetDecorator>()
+                    .Is<SafeDecorator>()
                     .Is<ExceptionDecorator>()
             );
         }
