@@ -1,12 +1,12 @@
 ﻿using Bosphorus.Configuration.Core.Decoration.Exception;
 using Bosphorus.Configuration.Core.Decoration.Safe;
-using Bosphorus.Container.Castle.Fluent;
+using Bosphorus.Container.Castle.Fluent.Decoration;
 using Bosphorus.Container.Castle.Registration;
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 
-namespace Bosphorus.Configuration.Core.Registration
+namespace Bosphorus.Configuration.Core
 {
     public class DecorationInstaller: AbstractWindsorInstaller, IDecoratorInstaller
     {
@@ -14,7 +14,7 @@ namespace Bosphorus.Configuration.Core.Registration
         {
             container.Register(
                 Decorator
-                    .For<IParameterProvider>()
+                    .Of<IParameterProvider>()
                     .Is<SafeDecorator>()
                     .Is<ExceptionDecorator>()
             );
