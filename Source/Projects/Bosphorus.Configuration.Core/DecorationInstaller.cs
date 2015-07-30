@@ -8,7 +8,7 @@ using Castle.Windsor;
 
 namespace Bosphorus.Configuration.Core
 {
-    public class DecorationInstaller: AbstractWindsorInstaller, IDecoratorInstaller
+    public class DecorationInstaller: AbstractWindsorInstaller
     {
         protected override void Install(IWindsorContainer container, IConfigurationStore store, FromTypesDescriptor allLoadedTypes)
         {

@@ -1,6 +1,8 @@
-﻿using Bosphorus.BootStapper.Common;
+﻿using System;
+using Bosphorus.BootStapper.Common;
 using Bosphorus.BootStapper.Program;
-using Bosphorus.BootStapper.Runner;
+using Bosphorus.BootStapper.Runner.Console;
+using Environment = Bosphorus.BootStapper.Common.Environment;
 
 namespace Bosphorus.Configuration.Core.Demo
 {
@@ -21,10 +23,10 @@ namespace Bosphorus.Configuration.Core.Demo
         public void Run(string[] args)
         {
             string value1 = programConfiguration.Key1;
-            System.Console.WriteLine(value1);
+            Console.WriteLine(value1);
 
             string value2 = programConfiguration.Key2;
-            System.Console.WriteLine(value2);
+            Console.WriteLine(value2);
         }
     }
 }
