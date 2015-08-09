@@ -3,7 +3,7 @@
     public abstract class AbstractConfiguration : IConfiguration
     {
         private readonly string name;
-        private readonly IParameterProvider parameterProvider;
+        protected readonly IParameterProvider parameterProvider;
 
         protected AbstractConfiguration(string name, IParameterProvider parameterProvider)
         {

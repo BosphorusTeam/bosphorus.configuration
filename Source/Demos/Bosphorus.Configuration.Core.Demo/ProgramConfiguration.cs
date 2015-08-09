@@ -2,7 +2,7 @@
 
 namespace Bosphorus.Configuration.Core.Demo
 {
-    public class ProgramConfiguration: AbstractConfiguration<Program>
+    public class ProgramConfiguration: AbstractConfiguration<Kernel>
     {
         public ProgramConfiguration(IInMemoryParameterProvider parameterProvider) 
             : base(parameterProvider)

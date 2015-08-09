@@ -6,18 +6,18 @@ using Environment = Bosphorus.BootStapper.Common.Environment;
 
 namespace Bosphorus.Configuration.Core.Demo
 {
-    public class Program: IProgram
+    public class Kernel: IKernel
     {
         private readonly ProgramConfiguration programConfiguration;
 
-        public Program(ProgramConfiguration programConfiguration)
+        public Kernel(ProgramConfiguration programConfiguration)
         {
             this.programConfiguration = programConfiguration;
         }
 
         static void Main(string[] args)
         {
-            ConsoleRunner.Run<Program>(Environment.Local, Perspective.Debug, args);
+            ConsoleRunner.Run<Kernel>(Environment.Local, Perspective.Debug, args);
         }
 
         public void Run(string[] args)
