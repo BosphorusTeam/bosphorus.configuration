@@ -1,23 +1,22 @@
 ﻿using System;
-using Bosphorus.BootStapper.Common;
-using Bosphorus.BootStapper.Program;
 using Bosphorus.BootStapper.Runner.Console;
-using Environment = Bosphorus.BootStapper.Common.Environment;
+using Bosphorus.Common.Core.Application;
+using Environment = Bosphorus.Common.Core.Application.Environment;
 
 namespace Bosphorus.Configuration.Core.Demo
 {
-    public class Kernel: IKernel
+    public class Program: IProgram
     {
         private readonly ProgramConfiguration programConfiguration;
 
-        public Kernel(ProgramConfiguration programConfiguration)
+        public Program(ProgramConfiguration programConfiguration)
         {
             this.programConfiguration = programConfiguration;
         }
 
         static void Main(string[] args)
         {
-            ConsoleRunner.Run<Kernel>(Environment.Local, Perspective.Debug, args);
+            ConsoleRunner.Run<Program>(Environment.Local, Perspective.Debug, args);
         }
 
         public void Run(string[] args)

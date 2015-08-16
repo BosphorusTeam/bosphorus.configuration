@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Configuration;
 using System.Linq;
-using Bosphorus.Configuration.Core;
+using Bosphorus.Configuration.Core.Parameter;
 
-namespace Bosphorus.Configuration.Default.AppConfig
+namespace Bosphorus.Configuration.Default.Parameter.AppConfig
 {
-    public class AppConfigParameterProvider : AbstractParameterProvider, IAppConfigParameterProvider
+    public class AppConfigParameterProvider : AbstractParameterProvider
     {
         public AppConfigParameterProvider() 
             : base("AppConfigParameterProvider")

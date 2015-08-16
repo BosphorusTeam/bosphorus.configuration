@@ -1,4 +1,4 @@
-﻿namespace Bosphorus.Configuration.Core.Decoration.Exception
+﻿namespace Bosphorus.Configuration.Core.Parameter.Decoration.Exception
 {
     class ExceptionDecorator: IParameterProvider
     {

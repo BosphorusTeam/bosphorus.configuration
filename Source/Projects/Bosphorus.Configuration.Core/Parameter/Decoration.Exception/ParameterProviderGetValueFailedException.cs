@@ -1,6 +1,6 @@
 using Bosphorus.Common.Clr.Exception;
 
-namespace Bosphorus.Configuration.Core.Decoration.Exception
+namespace Bosphorus.Configuration.Core.Parameter.Decoration.Exception
 {
     public class ParameterProviderGetValueFailedException : ExceptionBase
     {

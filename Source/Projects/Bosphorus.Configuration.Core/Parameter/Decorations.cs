@@ -1,10 +1,9 @@
-﻿using System;
-using Bosphorus.Configuration.Core.Decoration.Exception;
-using Bosphorus.Configuration.Core.Decoration.Safe;
+﻿using Bosphorus.Configuration.Core.Parameter.Decoration.Exception;
+using Bosphorus.Configuration.Core.Parameter.Decoration.Safe;
 
-namespace Bosphorus.Configuration.Core
+namespace Bosphorus.Configuration.Core.Parameter
 {
-    public static class IParameterProviderDecorations
+    public static class Decorations
     {
         public static IParameterProvider Safe(this IParameterProvider extended)
         {

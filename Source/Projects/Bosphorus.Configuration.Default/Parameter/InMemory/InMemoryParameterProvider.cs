@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using Bosphorus.Configuration.Core;
+using Bosphorus.Configuration.Core.Parameter;
 
-namespace Bosphorus.Configuration.Default.InMemory
+namespace Bosphorus.Configuration.Default.Parameter.InMemory
 {
-    public class InMemoryParameterProvider: AbstractParameterProvider, IInMemoryParameterProvider
+    public class InMemoryParameterProvider: AbstractParameterProvider
     {
         private readonly IDictionary<string, object> backingStore;
 

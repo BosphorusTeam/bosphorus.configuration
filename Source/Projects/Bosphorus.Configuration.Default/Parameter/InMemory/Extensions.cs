@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Bosphorus.Configuration.Default.InMemory
+namespace Bosphorus.Configuration.Default.Parameter.InMemory
 {
-    public static class IInMemoryParameterProviderExtensions
+    public static class Extensions
     {
-        public static void SetValueAsEnum<TEnum>(this IInMemoryParameterProvider extended, string parameterName, TEnum parameterValue)
+        public static void SetValueAsEnum<TEnum>(this InMemoryParameterProvider extended, string parameterName, TEnum parameterValue)
         {
             Type enumType = typeof (TEnum);
             string parameterValueString = Enum.GetName(enumType, parameterValue);

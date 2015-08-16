@@ -47,19 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractConfiguration.Generic.cs" />
-    <Compile Include="AbstractConfiguration.NonGeneric.cs" />
-    <Compile Include="Decoration.Safe\ParameterNotExistsException.cs" />
-    <Compile Include="Decoration.Exception\ParameterProviderContainsKeyFailedException.cs" />
-    <Compile Include="Decoration.Exception\ParameterProviderGetValueFailedException.cs" />
-    <Compile Include="Decoration.Safe\SafeDecorator.cs" />
-    <Compile Include="AbstractParameterProvider.cs" />
-    <Compile Include="Decoration.Exception\ExceptionDecorator.cs" />
-    <Compile Include="IConfiguration.cs" />
-    <Compile Include="IParameterProviderDecorations.cs" />
+    <Compile Include="Configuration\AbstractConfiguration.cs" />
+    <Compile Include="Parameter\Decoration.Safe\ParameterNotExistsException.cs" />
+    <Compile Include="Parameter\Decoration.Exception\ParameterProviderContainsKeyFailedException.cs" />
+    <Compile Include="Parameter\Decoration.Exception\ParameterProviderGetValueFailedException.cs" />
+    <Compile Include="Parameter\Decoration.Safe\SafeDecorator.cs" />
+    <Compile Include="Parameter\AbstractParameterProvider.cs" />
+    <Compile Include="Parameter\Decoration.Exception\ExceptionDecorator.cs" />
+    <Compile Include="Configuration\IConfiguration.cs" />
+    <Compile Include="Parameter\Decorations.cs" />
     <Compile Include="DecorationInstaller.cs" />
-    <Compile Include="IParameterProvider.cs" />
-    <Compile Include="IParameterProviderExtensions.cs" />
+    <Compile Include="Parameter\IParameterProvider.cs" />
+    <Compile Include="Parameter\Extensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,6 @@
-﻿using Bosphorus.Container.Castle.Registration;
+﻿using Bosphorus.Configuration.Core.Parameter;
+using Bosphorus.Configuration.Default.Parameter.AppConfig;
+using Bosphorus.Container.Castle.Registration;
 using Bosphorus.Container.Castle.Registration.Installer;
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
@@ -12,8 +14,11 @@ namespace Bosphorus.Configuration.Core.Demo
         {
             container.Register(
                 Component
+                    .For<IParameterProvider>()
+                    .ImplementedBy<AppConfigParameterProvider>(),
+
+                Component
                     .For<ProgramConfiguration>()
-                    .ImplementedBy<ProgramConfiguration>()
             );
         }
     }

@@ -1,9 +1,11 @@
-﻿namespace Bosphorus.Configuration.Core
+﻿using Bosphorus.Configuration.Core.Parameter;
+
+namespace Bosphorus.Configuration.Core.Configuration
 {
     public abstract class AbstractConfiguration : IConfiguration
     {
         private readonly string name;
-        protected readonly IParameterProvider parameterProvider;
+        private readonly IParameterProvider parameterProvider;
 
         protected AbstractConfiguration(string name, IParameterProvider parameterProvider)
         {
@@ -11,10 +13,7 @@
             this.parameterProvider = parameterProvider;
         }
 
-        public string Name 
-        {
-            get { return name; }
-        }
+        public string Name => name;
 
         protected TValue GetValue<TValue>(string parameterName)
         {
@@ -39,7 +38,7 @@
 
         private string GetFullParameterName(string parameterName)
         {
-            string parameterFullName = string.Format("{0}.{1}", name, parameterName);
+            string parameterFullName = $"{name}.{parameterName}";
             return parameterFullName;
         }
 

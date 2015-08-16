@@ -1,7 +1,9 @@
-﻿using Bosphorus.Configuration.Core.Decoration.Exception;
-using Bosphorus.Configuration.Core.Decoration.Safe;
-using Bosphorus.Container.Castle.Fluent.Decoration;
+﻿using Bosphorus.Configuration.Core.Parameter;
+using Bosphorus.Configuration.Core.Parameter.Decoration.Exception;
+using Bosphorus.Configuration.Core.Parameter.Decoration.Safe;
 using Bosphorus.Container.Castle.Registration;
+using Bosphorus.Container.Castle.Registration.Fluent.Decoration;
+using Bosphorus.Container.Castle.Registration.Installer;
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;

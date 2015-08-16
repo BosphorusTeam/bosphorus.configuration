@@ -1,22 +1,17 @@
-﻿using Bosphorus.Configuration.Default.InMemory;
+﻿using Bosphorus.Configuration.Core.Configuration;
+using Bosphorus.Configuration.Core.Parameter;
 
 namespace Bosphorus.Configuration.Core.Demo
 {
-    public class ProgramConfiguration: AbstractConfiguration<Kernel>
+    public class ProgramConfiguration: AbstractConfiguration
     {
-        public ProgramConfiguration(IInMemoryParameterProvider parameterProvider) 
-            : base(parameterProvider)
+        public ProgramConfiguration(IParameterProvider parameterProvider) 
+            : base("Bosphorus.Configuration.Core.Demo", parameterProvider)
         {
         }
 
-        public string Key1
-        {
-            get { return GetValue<string>("Key1"); }
-        }
+        public string Key1 => GetValue<string>("Key1");
 
-        public string Key2
-        {
-            get { return GetValue<string>("Key2"); }
-        }
+        public string Key2 => GetValue<string>("Key2");
     }
 }

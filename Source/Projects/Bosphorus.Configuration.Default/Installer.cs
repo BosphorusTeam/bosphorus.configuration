@@ -1,14 +1,10 @@
-﻿using Bosphorus.Configuration.Core;
-using Bosphorus.Configuration.Default.AppConfig;
-using Bosphorus.Configuration.Default.InMemory;
-using Bosphorus.Container.Castle.Fluent;
-using Bosphorus.Container.Castle.Registration;
+﻿using Bosphorus.Container.Castle.Registration;
 using Bosphorus.Container.Castle.Registration.Installer;
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 
-namespace Bosphorus.Configuration.Default.Registration
+namespace Bosphorus.Configuration.Default
 {
     public class Installer: AbstractWindsorInstaller, IInfrastructureInstaller
     {

@@ -1,4 +1,4 @@
-﻿namespace Bosphorus.Configuration.Core.Decoration.Safe
+﻿namespace Bosphorus.Configuration.Core.Parameter.Decoration.Safe
 {
     class SafeDecorator: IParameterProvider
     {
