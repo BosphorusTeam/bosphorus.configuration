@@ -63,10 +63,6 @@
       <Project>{9B8DBFE7-A90C-40D6-B9C1-B6A9528F8317}</Project>
       <Name>Bosphorus.Container.Castle</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\bosphorus.dao\Source\Projects\Bosphorus.Dao.Core\Bosphorus.Dao.Core.csproj">
-      <Project>{5C3B656E-528C-4988-A31F-EA0AABC82CFB}</Project>
-      <Name>Bosphorus.Dao.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Bosphorus.Configuration.Core\Bosphorus.Configuration.Core.csproj">
       <Project>{FC5A7B05-6722-4959-988F-6ECB569EB356}</Project>
       <Name>Bosphorus.Configuration.Core</Name>
