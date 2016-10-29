@@ -1,16 +1,14 @@
 ﻿using Bosphorus.Configuration.Core.Parameter;
 using Bosphorus.Configuration.Default.Parameter.AppConfig;
-using Bosphorus.Container.Castle.Registration;
-using Bosphorus.Container.Castle.Registration.Installer;
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 
 namespace Bosphorus.Configuration.Core.Demo
 {
-    public class Installer: AbstractWindsorInstaller, IInfrastructureInstaller
+    public class Installer: IWindsorInstaller
     {
-        protected override void Install(IWindsorContainer container, IConfigurationStore store, FromTypesDescriptor allLoadedTypes)
+        public void Install(IWindsorContainer container, IConfigurationStore store)
         {
             container.Register(
                 Component

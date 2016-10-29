@@ -1,17 +1,12 @@
 ﻿namespace Bosphorus.Configuration.Core.Parameter.Decoration.Exception
 {
-    class ExceptionDecorator: IParameterProvider
+    public class ExceptionDecorator: IParameterProvider
     {
         private readonly IParameterProvider decorated;
 
         public ExceptionDecorator(IParameterProvider decorated)
         {
             this.decorated = decorated;
-        }
-
-        public string Name
-        {
-            get { return decorated.Name; }
         }
 
         public bool Contains(string key)
@@ -23,7 +18,7 @@
             }
             catch (System.Exception exception)
             {
-                throw new ParameterProviderContainsKeyFailedException(decorated, key, exception);
+                throw new ParameterProviderException("ParameterProvider ContainsKey failed", decorated, key, exception);
             }
             
         }
@@ -37,7 +32,7 @@
             }
             catch (System.Exception exception)
             {
-                throw new ParameterProviderGetValueFailedException(decorated, key, exception);
+                throw new ParameterProviderException("ParameterProvider GetOptionalValue failed", decorated, key, exception);
             }
         }
     }

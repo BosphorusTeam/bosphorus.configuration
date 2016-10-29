@@ -3,7 +3,7 @@ using Bosphorus.Configuration.Core.Parameter;
 
 namespace Bosphorus.Configuration.Default.Parameter.InMemory
 {
-    public class InMemoryParameterProvider: AbstractParameterProvider
+    public class InMemoryParameterProvider: IParameterProvider
     {
         private readonly IDictionary<string, object> backingStore;
 
@@ -12,16 +12,15 @@ namespace Bosphorus.Configuration.Default.Parameter.InMemory
             backingStore = new Dictionary<string, object>();
         }
 
-        protected override bool ContainsInternal(string parameterName)
+        public bool Contains(string key)
         {
-            bool result = backingStore.ContainsKey(parameterName);
-            return result;
+            return backingStore.ContainsKey(key);
         }
 
-        protected override TValue GetValueInternal<TValue>(string parameterName)
+        public TValue GetValue<TValue>(string key)
         {
-            object result = backingStore[parameterName];
-            return (TValue) result;
+            object result = backingStore[key];
+            return (TValue)result;
         }
 
         public void SetValue(string parameterName, object parameterValue)

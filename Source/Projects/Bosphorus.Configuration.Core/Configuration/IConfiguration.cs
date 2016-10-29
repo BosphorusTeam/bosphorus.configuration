@@ -2,6 +2,5 @@
 {
     public interface IConfiguration
     {
-        string Name { get; }
     }
 }

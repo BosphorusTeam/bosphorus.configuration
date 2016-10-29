@@ -5,24 +5,18 @@ using Bosphorus.Configuration.Core.Parameter;
 
 namespace Bosphorus.Configuration.Default.Parameter.AppConfig
 {
-    public class AppConfigParameterProvider : AbstractParameterProvider
+    public class AppConfigParameterProvider : IParameterProvider
     {
-        public AppConfigParameterProvider() 
-            : base("AppConfigParameterProvider")
+        public bool Contains(string key)
         {
+            return ConfigurationManager.AppSettings.AllKeys.Contains(key);
         }
 
-        protected override bool ContainsInternal(string parameterName)
+        public TValue GetValue<TValue>(string key)
         {
-            bool parameterExists = ConfigurationManager.AppSettings.AllKeys.Contains(parameterName);
-            return parameterExists;
-        }
-
-        protected override TValue GetValueInternal<TValue>(string parameterName)
-        {
-            string appSettingsValue = ConfigurationManager.AppSettings.Get(parameterName);
+            string appSettingsValue = ConfigurationManager.AppSettings.Get(key);
             object parameterValue = Convert.ChangeType(appSettingsValue, typeof(TValue));
-            return (TValue) parameterValue;
+            return (TValue)parameterValue;
         }
    }
 }
