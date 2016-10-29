@@ -37,20 +37,20 @@
       <HintPath>..\..\packages\Bosphorus.Assemble.BootStrapper.2.0.1.11\lib\net461\Bosphorus.Assemble.BootStrapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Bosphorus.Common.Api, Version=2.0.1.16, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Bosphorus.Common.Api.2.0.1.16\lib\net461\Bosphorus.Common.Api.dll</HintPath>
+    <Reference Include="Bosphorus.Common.Api, Version=2.0.1.13, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Bosphorus.Common.Api.2.0.1.13\lib\net461\Bosphorus.Common.Api.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Bosphorus.Common.Application, Version=2.0.1.16, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Bosphorus.Common.Application.2.0.1.16\lib\net461\Bosphorus.Common.Application.dll</HintPath>
+    <Reference Include="Bosphorus.Common.Application, Version=2.0.1.13, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Bosphorus.Common.Application.2.0.1.13\lib\net461\Bosphorus.Common.Application.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\bosphorus\Source\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+      <HintPath>..\..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Castle.Windsor, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\bosphorus\Source\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+      <HintPath>..\..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
